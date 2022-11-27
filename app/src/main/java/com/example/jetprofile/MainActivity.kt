@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.provider.ContactsContract.Profile
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -41,12 +42,21 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Profile() {
-    Text(
-        text = "あんどた",
-        color = Color.Gray,
-        fontSize = 16.sp,
-        fontWeight = FontWeight.ExtraBold,
-    )
+    Column() {
+        // 名前
+        Text(
+            text = "あんどた",
+            color = Color.Gray,
+            fontSize = 16.sp,
+            fontWeight = FontWeight.ExtraBold,
+        )
+        // 職業
+        Text(
+            text = "職業: Androidエンジニア",
+            color = Color.Gray,
+            fontSize = 16.sp,
+        )
+    }
 }
 
 @Preview(showBackground = true)
