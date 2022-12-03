@@ -58,6 +58,7 @@ fun Profile() {
             painter = painterResource(id = R.drawable.img_profile),
             contentDescription = "プロフィール",
         )
+        Spacer(modifier = Modifier.height(20.dp))
         // 名前
         Text(
             text = "あんどた",
