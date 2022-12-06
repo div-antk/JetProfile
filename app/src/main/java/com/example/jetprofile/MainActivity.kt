@@ -85,8 +85,11 @@ fun Profile() {
                 fontWeight = FontWeight.Bold,
             )
             Spacer(modifier = Modifier.height(10.dp))
-
-
+            Text(
+                text = "アプリDIV",
+                color = Color.Gray,
+                fontSize = 16.sp
+            )
         }
     }
 }
