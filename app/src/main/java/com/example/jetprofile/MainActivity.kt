@@ -107,6 +107,12 @@ fun Profile() {
                     fontSize = 14.sp,
                     fontWeight = FontWeight.Bold
                 )
+                Spacer(modifier = Modifier.height(10.dp))
+                Text(
+                    text = "example@ggmail.com",
+                    fontSize = 16.sp
+                )
+                Spacer(modifier = Modifier.height(5.dp))
             }
         }
     }
