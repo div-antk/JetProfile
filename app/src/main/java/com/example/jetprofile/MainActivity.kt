@@ -104,17 +104,17 @@ fun Profile() {
                     fontSize = 14.sp,
                     fontWeight = FontWeight.Bold
                 )
-                Spacer(modifier = Modifier.height(10.dp))
-                Text(
-                    text = "example@ggmail.com",
-                    fontSize = 16.sp
-                )
-                Spacer(modifier = Modifier.height(5.dp))
-                Divider(
+            }
+            Spacer(modifier = Modifier.height(10.dp))
+            Text(
+                text = "example@ggmail.com",
+                fontSize = 16.sp
+            )
+            Spacer(modifier = Modifier.height(5.dp))
+            Divider(
                     modifier = Modifier.clip(RoundedCornerShape(1000.dp)),
                     thickness = 2.dp
-                )
-            }
+            )
             Spacer(modifier = Modifier.height(20.dp))
 
             // 詳細表示ボタン
