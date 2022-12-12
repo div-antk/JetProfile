@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
@@ -130,6 +131,18 @@ fun Profile() {
                 text = "詳細を表示",
                 color = Color.White
             )
+        }
+        Spacer(modifier = Modifier.height(20.dp))
+
+        // 趣味と居住地セクション
+        Column(
+           modifier = Modifier
+               .fillMaxWidth()
+               .clip(RoundedCornerShape(10.dp))
+               .background(Color.LightGray.copy(alpha = 0.3f))
+               .padding(horizontal = 10.dp, vertical = 20.dp)
+        ) {
+            // TODO
         }
     }
 }
