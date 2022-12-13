@@ -154,3 +154,19 @@ fun DefaultPreview() {
         Profile()
     }
 }
+
+@Composable
+fun Label() {
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        Icon(
+            imageVector = Icons.Default.Email,
+            contentDescription = "email"
+        )
+        Spacer(modifier = Modifier.width(10.dp))
+        Text(
+            text = "Email",
+            fontSize = 14.sp,
+            fontWeight = FontWeight.Bold
+        )
+    }
+}
