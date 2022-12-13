@@ -15,6 +15,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -156,15 +157,16 @@ fun DefaultPreview() {
 }
 
 @Composable
-fun Label() {
+fun Label(icon: ImageVector, text: String, color: Color = MaterialTheme.colors.onBackground) {
     Row(verticalAlignment = Alignment.CenterVertically) {
         Icon(
-            imageVector = Icons.Default.Email,
-            contentDescription = "email"
+            imageVector = icon,
+            contentDescription = null
         )
         Spacer(modifier = Modifier.width(10.dp))
         Text(
-            text = "Email",
+            text = text,
+            color = color,
             fontSize = 14.sp,
             fontWeight = FontWeight.Bold
         )
