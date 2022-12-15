@@ -108,15 +108,9 @@ fun Profile() {
                 )
             }
             Spacer(modifier = Modifier.height(10.dp))
-            Text(
-                text = "example@ggmail.com",
-                fontSize = 16.sp
-            )
-            Spacer(modifier = Modifier.height(5.dp))
-            Divider(
-                modifier = Modifier.clip(RoundedCornerShape(1000.dp)),
-                thickness = 2.dp
-            )
+
+            // Email
+            Label(icon = Icons.Default.Email, text = "Email")
         }
         Spacer(modifier = Modifier.height(20.dp))
 
