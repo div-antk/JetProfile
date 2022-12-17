@@ -162,19 +162,19 @@ fun DefaultPreview() {
     }
 }
 
-@Composable
-fun Label(icon: ImageVector, text: String, color: Color = MaterialTheme.colors.onBackground) {
-    Row(verticalAlignment = Alignment.CenterVertically) {
-        Icon(
-            imageVector = icon,
-            contentDescription = null
-        )
-        Spacer(modifier = Modifier.width(10.dp))
-        Text(
-            text = text,
-            color = color,
-            fontSize = 14.sp,
-            fontWeight = FontWeight.Bold
-        )
-    }
-}
+//@Composable
+//fun Label(icon: ImageVector, text: String, color: Color = MaterialTheme.colors.onBackground) {
+//    Row(verticalAlignment = Alignment.CenterVertically) {
+//        Icon(
+//            imageVector = icon,
+//            contentDescription = null
+//        )
+//        Spacer(modifier = Modifier.width(10.dp))
+//        Text(
+//            text = text,
+//            color = color,
+//            fontSize = 14.sp,
+//            fontWeight = FontWeight.Bold
+//        )
+//    }
+//}
