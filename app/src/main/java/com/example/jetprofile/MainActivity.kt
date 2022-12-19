@@ -131,26 +131,26 @@ fun Profile() {
         }
         Spacer(modifier = Modifier.height(20.dp))
 
-        // 趣味と居住地セクション
-        Column(
-           modifier = Modifier
-               .fillMaxWidth()
-               .clip(RoundedCornerShape(10.dp))
-               .background(Color.LightGray.copy(alpha = 0.3f))
-               .padding(horizontal = 10.dp, vertical = 20.dp)
-        ) {
-            Label(
-                icon = Icons.Default.Favorite,
-                text = "腕時計",
-                color = Color.Gray
-            )
-            Spacer(modifier = Modifier.height(10.dp))
-            Label(
-                icon = Icons.Default.LocationOn,
-                text = "東京都文京区",
-                color = Color.Gray
-            )
-        }
+//        // 趣味と居住地セクション
+//        Column(
+//           modifier = Modifier
+//               .fillMaxWidth()
+//               .clip(RoundedCornerShape(10.dp))
+//               .background(Color.LightGray.copy(alpha = 0.3f))
+//               .padding(horizontal = 10.dp, vertical = 20.dp)
+//        ) {
+//            Label(
+//                icon = Icons.Default.Favorite,
+//                text = "腕時計",
+//                color = Color.Gray
+//            )
+//            Spacer(modifier = Modifier.height(10.dp))
+//            Label(
+//                icon = Icons.Default.LocationOn,
+//                text = "東京都文京区",
+//                color = Color.Gray
+//            )
+//        }
     }
 }
 

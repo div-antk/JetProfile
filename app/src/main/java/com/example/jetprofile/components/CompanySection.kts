@@ -1,3 +1,5 @@
+package com.example.jetprofile.components
+
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Icon
 import androidx.compose.material.Text
