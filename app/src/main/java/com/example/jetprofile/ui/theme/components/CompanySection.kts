@@ -1,4 +1,4 @@
-package com.example.jetprofile.components
+package com.example.jetprofile.ui.theme.components
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Icon
