@@ -1,6 +1,7 @@
 package com.example.jetprofile
 
 import android.os.Bundle
+import android.telecom.Call.Details
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -108,7 +109,7 @@ fun Profile() {
 //            Label(icon = Icons.Default.Email, text = "Email")
 //        }
         Spacer(modifier = Modifier.height(20.dp))
-        
+
         // 詳細表示ボタン
         Button(
             modifier = Modifier.fillMaxWidth(),
