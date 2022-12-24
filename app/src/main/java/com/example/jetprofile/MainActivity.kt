@@ -19,6 +19,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.jetprofile.ui.theme.JetProfileTheme
+import com.example.jetprofile.ui.theme.components.CompanySection
+import com.example.jetprofile.ui.theme.components.DetailSection
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -67,6 +69,9 @@ fun Profile() {
             fontSize = 16.sp,
         )
 
+        // 会社情報
+        CompanySection()
+
         Spacer(modifier = Modifier.height(20.dp))
         // 詳細表示ボタン
 
@@ -83,6 +88,9 @@ fun Profile() {
             )
         }
         Spacer(modifier = Modifier.height(20.dp))
+
+        // 趣味&居住地
+        DetailSection()
     }
 }
 
