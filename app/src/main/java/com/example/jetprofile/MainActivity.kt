@@ -1,7 +1,6 @@
 package com.example.jetprofile
 
 import android.os.Bundle
-import android.telecom.Call.Details
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -27,12 +26,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             JetProfileTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Profile()
+                    MainContent()
                 }
             }
         }
@@ -40,7 +38,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Profile() {
+fun MainContent() {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally
     )
@@ -68,13 +66,13 @@ fun Profile() {
             color = Color.Gray,
             fontSize = 16.sp,
         )
+        Spacer(modifier = Modifier.height(20.dp))
 
         // 会社情報
         CompanySection()
-
         Spacer(modifier = Modifier.height(20.dp))
-        // 詳細表示ボタン
 
+        // 詳細表示ボタン
         Button(
             modifier = Modifier.fillMaxWidth(),
             colors = ButtonDefaults.buttonColors(
@@ -98,6 +96,6 @@ fun Profile() {
 @Composable
 fun DefaultPreview() {
     JetProfileTheme {
-        Profile()
+        MainContent()
     }
 }
