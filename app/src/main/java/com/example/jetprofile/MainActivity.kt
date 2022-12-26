@@ -86,10 +86,10 @@ fun MainContent() {
             colors = ButtonDefaults.buttonColors(
                 backgroundColor = Color(0xFFF85F6A)
             ),
-            onClick = { /*TODO*/ }
+            onClick = { isShowDetail = !isShowDetail }
         ) {
             Text(
-                text = "詳細を表示",
+                text = if (isShowDetail) "詳細を非表示" else "詳細を表示",
                 color = Color.White
             )
         }
